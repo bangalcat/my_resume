@@ -17,19 +17,35 @@
     <title>Donghyun's Resume</title>
   </head>
 
-  <body class="grid sm:min-h-screen sm:place-items-center sm:bg-gray-100">
+  <body class="sm:min-h-screen sm:place-items-center sm:bg-gray-100">
     <div
-      class="grid grid-cols-1 gap-4 p-8 sm:p-0 sm:m-4 sm:h-[297mm] sm:w-[210mm] sm:overflow-hidden rounded-md bg-white shadow-lg print:m-0 print:h-[297mm] print:w-[210mm] print:rounded-none print:shadow-none print:p-0"
+      class="p-8 sm:p-0 sm:m-4 sm:h-[297mm] sm:w-[210mm] sm:overflow-hidden rounded-md bg-white shadow-lg print:m-0 print:h-[297mm] print:w-[210mm] print:rounded-none print:shadow-none print:p-0"
     >
       <!-- Top Panel -->
       <div
-        class="col-span-1 grid grid-cols-1 sm:grid-cols-3 gap-4 bg-blue-800 text-white p-4 rounded-md print:bg-blue-400"
+        class="col-span-1 grid grid-cols-2 grid-rows-2 bg-blue-200 text-black p-4 rounded-md print:bg-blue-200"
       >
-        <div class="sm:col-span-1">
-          <h1 class="font-bold text-lg">Donghyun Seo</h1>
-          <p class="mt-1 text-xs">Elixir Backend Developer</p>
+        <div class="sm:col-span-2">
+          <h1 class="font-bold text-2xl">Donghyun Seo</h1>
+          <p class="mt-1 text-xs">Software Engineer</p>
         </div>
-        
+
+        <!-- Skills Section -->
+        <div class="col-span-1">
+          <h2 class="text-sm font-bold">Skills</h2>
+          <div class="mt-2">
+            <ul
+              class="flex flex-wrap gap-1 divide-dashed divide-black pl-4 text-xs"
+            >
+              <li>Elixir & Phoenix</li>
+              <li>Functional Programming</li>
+              <li>Web Development</li>
+              <li>Kubernetes</li>
+              <li>DevOps</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Contact Details -->
         <div class="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -75,7 +91,7 @@
               <span class="align-middle">010-2043-0644</span>
             </p>
           </div>
-          
+
           <div>
             <h2 class="text-sm font-bold mt-2">Links</h2>
             <p class="text-xxs">
@@ -163,21 +179,6 @@
               >
             </p>
           </div>
-        </div>
-      </div>
-      
-      <!-- Skills Section -->
-      <div class="col-span-1">
-        <h2 class="text-sm font-bold">Skills</h2>
-        <hr />
-        <div class="mt-2">
-          <ul class="list-disc pl-4 text-xs">
-            <li>Elixir & Phoenix</li>
-            <li>Functional Programming</li>
-            <li>Web Development</li>
-            <li>Kubernetes</li>
-            <li>DevOps</li>
-          </ul>
         </div>
       </div>
 
