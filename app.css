@@ -3,3 +3,11 @@
 @theme {
   --text-xxs: 0.625rem;
 }
+
+@layer components {
+  .work-experience-item {
+    .li {
+      margin-left: 1.5rem;
+    }
+  }
+}
