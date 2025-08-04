@@ -356,6 +356,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -464,6 +467,11 @@
       height: 297mm;
     }
   }
+  .sm\:h-\[299mm\] {
+    @media (width >= 40rem) {
+      height: 299mm;
+    }
+  }
   .sm\:min-h-screen {
     @media (width >= 40rem) {
       min-height: 100vh;
@@ -514,14 +522,49 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .print\:h-\[294mm\] {
+    @media print {
+      height: 294mm;
+    }
+  }
+  .print\:h-\[295mm\] {
+    @media print {
+      height: 295mm;
+    }
+  }
   .print\:h-\[297mm\] {
     @media print {
       height: 297mm;
     }
   }
+  .print\:h-\[299mm\] {
+    @media print {
+      height: 299mm;
+    }
+  }
+  .print\:h-\[301mm\] {
+    @media print {
+      height: 301mm;
+    }
+  }
+  .print\:h-\[312mm\] {
+    @media print {
+      height: 312mm;
+    }
+  }
+  .print\:w-\[208mm\] {
+    @media print {
+      width: 208mm;
+    }
+  }
   .print\:w-\[210mm\] {
     @media print {
       width: 210mm;
+    }
+  }
+  .print\:w-\[220mm\] {
+    @media print {
+      width: 220mm;
     }
   }
   .print\:rounded-none {
@@ -554,7 +597,8 @@
 @layer components {
   .we-item {
     margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: var(--text-xs);
+    line-height: calc(var(--spacing) * 5);
   }
   .tag-item {
     margin-right: calc(var(--spacing) * 1);
