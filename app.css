@@ -5,9 +5,8 @@
 }
 
 @layer components {
-  .work-experience-item {
-    .li {
-      margin-left: 1.5rem;
-    }
+  .we-item {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
