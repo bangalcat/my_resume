@@ -12,7 +12,6 @@
     --color-orange-700: oklch(55.3% 0.195 38.402);
     --color-orange-950: oklch(26.6% 0.079 36.259);
     --color-green-700: oklch(52.7% 0.154 150.069);
-    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
@@ -224,9 +223,6 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
-  .mr-1 {
-    margin-right: calc(var(--spacing) * 1);
-  }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
@@ -271,9 +267,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -324,9 +317,6 @@
   .bg-\[\#B125EA\] {
     background-color: #B125EA;
   }
-  .bg-blue-200 {
-    background-color: var(--color-blue-200);
-  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -371,9 +361,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -542,11 +529,6 @@
       border-radius: 0;
     }
   }
-  .print\:bg-blue-200 {
-    @media print {
-      background-color: var(--color-blue-200);
-    }
-  }
   .print\:bg-gray-200 {
     @media print {
       background-color: var(--color-gray-200);
@@ -573,6 +555,14 @@
   .we-item {
     margin-left: 1.5rem;
     margin-bottom: 0.5rem;
+  }
+  .tag-item {
+    margin-right: calc(var(--spacing) * 1);
+    border-radius: 0.25rem;
+    padding-inline: calc(var(--spacing) * 1);
+    padding-block: calc(var(--spacing) * 0.5);
+    font-size: var(--text-xxs);
+    color: var(--color-white);
   }
 }
 @property --tw-divide-x-reverse {

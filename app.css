@@ -9,4 +9,8 @@
     margin-left: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
+  .tag-item {
+    @apply px-1 py-0.5 rounded text-xxs mr-1 text-white;
+  }
 }
